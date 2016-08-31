@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clocky</title>
+    <link rel="icon" href="media/img/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/howler.core.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/tasks.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="timeBox">
+        <h1 id="time"></h1>
+        <h2 id="message"></h2>
+        <h3 id="currentTask"></h3>
+        <h3 id="timer"></h3>
+
+        <center>
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default" onclick="initializeTimer(1,0)">1 Hour</button>
+                <button type="button" class="btn btn-default" onclick="initializeTimer(2,0)">2 Hour</button>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="toggleTimer()">Start/Stop Timer</button>
+            <button type="button" class="btn btn-danger" onclick="timerOff()">Turn Off Timer</button>
+        </center>
+
+        <br>
+        <div class="input-group">
+            <input type="text" id="task-input" class="form-control" placeholder="Add Task...">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Pomodoro Timer (25 min.)" onclick="addTask(0,25)">
+                    <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Set Time <span class="caret"></span></button>
+                <ul data-toggle="tooltip" data-placement="top" title="How long will your task take?" class="dropdown-menu dropdown-menu-right">
+                    <li><a onclick="addTask(0,30)">0:30 (30 mins)</a></li>
+                    <li><a onclick="addTask(1,0)">1:00 (1 hr)</a></li>
+                    <li><a onclick="addTask(1,30)">1:30</a></li>
+                    <li><a onclick="addTask(2,0)">2:00</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+
+        <h3 id="taskTitle"></h3>
+        <div id="taskList">
+        </div>
+        <center>
+            <button type="button" class="btn btn-success" onclick="startTask()">Start Task</button>
+        </center>
+    </div>
+    <!-- TODO: Adjust for shifting text when adding tasks -->
+
+</body>
+
+
+</html>

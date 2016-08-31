@@ -1,0 +1,43 @@
+body {
+  background-color: cadetblue;
+  /*background: url("img/background0.jpg");*/
+  background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+}
+
+h1 {
+  color: white;
+  font-size: 150px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+
+#timeBox {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#taskList {
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+}
