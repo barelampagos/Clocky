@@ -1,6 +1,5 @@
 body {
   background-color: cadetblue;
-  /*background: url("img/background0.jpg");*/
   background-position: center center;
 	background-repeat:  no-repeat;
 	background-attachment: fixed;
@@ -27,6 +26,19 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+/*#timeBox {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}*/
+
 
 #timeBox {
   margin: 0;
@@ -35,6 +47,7 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 #taskList {
   background-color: white;

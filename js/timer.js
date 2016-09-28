@@ -78,7 +78,8 @@ function timerUpdate() {
 function timerOff() {
     alert.stop();
     $("#timer").text("");
-    $("#currentTask").text("");
+    $("#message").text("");
+    activeTask = false;
     $("title").text("Clocky");
 
     timerOn = false;

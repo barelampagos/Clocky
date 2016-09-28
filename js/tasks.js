@@ -41,13 +41,14 @@ function startTask() {
     console.log(currentTask);
 
     if (currentTask != undefined) {
+        activeTask = true;
         $('p#' + currentTask.id).remove();
-        $("#currentTask").text(currentTask.task);
+        $("#message").text(currentTask.task);
         initializeTimer(currentTask.hours, currentTask.minutes);
         toggleTimer();
     } else {
+        activeTask = false;
         $("#currentTask").text("No tasks.");
-        $("#timer").text("");
         timerOn = false;
     }
 

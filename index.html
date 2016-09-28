@@ -25,16 +25,14 @@
     <div id="timeBox">
         <h1 id="time"></h1>
         <h2 id="message"></h2>
-        <h3 id="currentTask"></h3>
         <h3 id="timer"></h3>
-
         <center>
             <div class="btn-group" role="group" aria-label="...">
                 <button type="button" class="btn btn-default" onclick="initializeTimer(1,0)">1 Hour</button>
                 <button type="button" class="btn btn-default" onclick="initializeTimer(2,0)">2 Hour</button>
             </div>
             <button type="button" class="btn btn-primary" onclick="toggleTimer()">Start/Stop Timer</button>
-            <button type="button" class="btn btn-danger" onclick="timerOff()">Turn Off Timer</button>
+            <button type="button" class="btn btn-danger" onclick="timerOff()">Timer Off</button>
         </center>
 
         <br>
@@ -55,14 +53,13 @@
         </div>
         <br>
 
-        <h3 id="taskTitle"></h3>
+        <h4 id="taskTitle"></h4>
         <div id="taskList">
         </div>
         <center>
             <button type="button" class="btn btn-success" onclick="startTask()">Start Task</button>
         </center>
     </div>
-    <!-- TODO: Adjust for shifting text when adding tasks -->
 
 </body>
 

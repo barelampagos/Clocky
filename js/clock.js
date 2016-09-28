@@ -1,4 +1,5 @@
 var numBackgrounds = 7;
+var activeTask = false;
 
 // clockUpdate() :
 // Called every second. Updates clock display & time of day message.
@@ -11,7 +12,9 @@ function clockUpdate() {
 // Generates current hour. Adjusts 24 hour -> 12 hour time.
 function getHours(date) {
     var clockHours = date.getHours();
-    updateMessage(clockHours);
+
+    if (!activeTask)
+      updateMessage(clockHours);
 
     if (clockHours > 12) {
         clockHours -= 12;
