@@ -10,9 +10,3 @@ A simple timer-meets-todo-list to help you manage your time and be productive. I
 ![Task List](media/taskList.gif)
 
 ![Timer](media/timer.gif)
-
-### How to install (Chrome Extension)
-1. Download Clocky.crx
-2. Navigate to ```chrome://extensions```
-3. Drag and drop Clocky.crx onto the page and click 'Add Extension'.
-4. Open a new tab.
